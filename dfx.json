@@ -1,0 +1,39 @@
+{
+  "canisters": {
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    },
+    "kutsvaga_backend": {
+      "main": "src/kutsvaga_backend/main.mo",
+      "type": "motoko"
+    },
+    "kutsvaga_frontend": {
+      "dependencies": [
+        "kutsvaga_backend"
+      ],
+      "source": [
+        "src/kutsvaga_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "kutsvaga_frontend"
+    }
+  },
+  "defaults": {
+    "bitcoin": {
+      "enabled": true,
+      "log_level": "info",
+      "nodes": [
+        "127.0.0.1:18444"
+      ]
+    },
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

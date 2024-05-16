@@ -1,0 +1,96 @@
+:root{
+  --primary : #1f3e72;
+  --secondary : rgba(255, 255, 255, 0.78);
+  --black:#131110;
+  --blue : #4066ff;
+  --lightblue :#eeeeff;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.flexStart{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flexEnd{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.flexColStart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexColEnd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.flexColCenter{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flexCenter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+.paddings{
+  padding: 1.5rem;
+}
+.innerWidth{
+  width: 100%;
+}
+.orangeText{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: orange;
+}
+.secondaryText{
+  font-size: 0.9rem;
+  color: rgb(140 139 139);
+}
+.primaryText{
+  font-size: 2rem;
+  color: rgb(37, 20, 129);
+  font-weight: 700;
+}
+.button{
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.4rem;
+  background: var(--blue);
+}
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.App{
+  position: relative;
+  overflow-x: clip;
+  margin-left: -25%
+  /* background: #131110; */
+}
+.App>:nth-child(1){
+  position: relative;
+  background: var(--black);
+}
+.white-gradient{
+  width: 1500px;
+  height: 20rem;
+  position: absolute;
+  background: rgba(255,255,255,0.522);
+  filter: blur(200px);
+  border-radius: 100px;
+}
